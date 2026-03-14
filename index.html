@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel ="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/727acd6c8a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <!-- <img src="Images/logo.png" class="logo"> -->
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">Profile</a></li>
+                        <li><a href="#services">Expertise</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-content">
+                    <div class="header-text">
+                        <!-- Main greeting -->
+                        <h1>Hi, I'm<br><span>Satkar Sarvankar</span></h1>
+
+                        <!-- Typing effect for dynamic roles -->
+                        <h2><span id="typed-container"></span></h2>
+
+                        <!-- Short professional tagline -->
+                        <p class="tagline">Building intelligent systems that learn from data.</p>
+
+                        <!-- Social media icons -->
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/satkar-sarvankar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://hub.docker.com/u/zenith40" target="_blank"><i class="fa-brands fa-docker"></i></a>
+                            <a href="https://github.com/satkar400" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <!-- <a href="#"><i class="fa-brands fa-medium"></i></a> -->
+                        </div>
+
+                        <!-- CV download button -->
+                        <a href="Images/Satkar Sarvankar.pdf" target="_blank" download class="btn btn1">Download CV</a>
+                    </div>
+
+                    <div class="header-image">
+                        <img src="Images/homepage.jpg" alt="profile">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!------------------About------------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/about.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Professional Summary</h1><br>
+                        <div class="about-info">
+                            <p><b>
+                                Aspiring AI Engineer with hands-on experience in Machine Learning, Deep Learning, and 
+                                Natural Language Processing (NLP). Strong foundation in data preprocessing, feature engineering, 
+                                model training, and evaluation using libraries like scikit-learn, TensorFlow, and Pandas. 
+                                Passionate about implementing AI solutions to solve real-world problems and exploring emerging 
+                                technologies like Generative AI, LLMs, and MLOps for intelligent automation.
+                            </b>
+                            </p>
+                        </div><br>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"><i><b>Tech-Stack</b></i></p>
+                            <p class="tab-links" onclick="opentab('experience')"><i><b>Experience</b></i></p>
+                            <p class="tab-links" onclick="opentab('education')"><i><b>Education</b></i></p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <span><b>  AI/ML :  </b></span>
+                                    Machine Learning, Deep Learning, NLP, LLMs, Generative AI
+                                </li>
+                                <li><span><b> Frameworks & Libraries : </b></span>
+                                    Transformers, Hugging Face, OpenAI API, scikit-learn, TensorFlow
+                                </li>
+                                <li><span><b> LangChain & Vector DBs : </b></span>
+                                    LangChain, MCP, ChromaDBI
+                                </li>
+                                <li><span><b> Deployment : </b></span>
+                                    Docker, Git, Streamlit, Gradio
+                                </li>
+                                <li><span><b> Core Concepts :  </b></span>
+                                    Data Preprocessing, Feature Engineering, Model Training, Evaluation, MLOps
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span><b>IT Suppot at Mobilestyx (2024 - Current)</b></span><br>
+                                    <br>
+                                    - Documented business and functional requirements for 10+ projects, improving clarity and reducing rework by 25%.<br><br>
+                                    - Created 15+ process flows and technical documents to streamline project delivery and onboarding.<br><br>
+                                    - Supported implementation of 5+ system enhancements, increasing operational efficiency by 20%.<br><br>
+                                    - Facilitated 30+ stakeholder meetings.<br><br>
+                                    - Contributed to project scheduling and tracking, reducing delivery delays by 15%.<br><br>
+                                    <br>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span><b>B.E from Goa College of Engineering (2019 - 2023)</b></span><br>
+                                    <br>
+                                    * Strong analytical and problem-solving skills from mechanical engineering.<br>
+                                    * Solid foundation in mathematics, including calculus, linear algebra, and statistics.<br>
+                                    * Proficient in Python, TensorFlow, and Matplotlib for data analysis and visualization.<br>
+                                    * Experience working with real-world, noisy datasets from sensors and equipment.<br>
+                                    * Skilled in applying data science to challenges like predictive maintenance and process optimization.<br>
+                                    * Unique ability to combine engineering expertise with data-driven solutions.
+                                    <br>
+                                </li>
+                                <li><span><b>Higher Secondary from Jawahar Navodaya Vidyalaya (2017 - 2019)</b></span><br>
+                                    <br>
+                                    * Strong foundation in mathematics, including algebra, calculus, and statistics.<br>
+                                    * Developed problem-solving skills and programming logic through JAVA.<br>
+                                    * Hands-on experience with SQL, allowing me to efficiently query databases  and manage data.<br>
+                                    * Knowledge of HTML helps me understand web-based data and create interactive dashboards.<br>
+                                    * My science background has strengthened my analytical thinking and ability to approach problems systematically.
+                                    <br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!------------------Services------------------------>
+        <!--https://fontawesome.com/icons/arrow-rotate-left?f=classic&s=solid : FOR ICONS -->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Core Expertise</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-brain"></i>
+                        <h2>AI/ML Model Development</h2>
+                        <p>Design, train, and optimize machine learning and deep learning models for tasks such as classification, regression, clustering, and natural language processing (NLP).</p>
+                        <!--a href="#">Learn More</a-->
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-face-smile"></i>
+                        <h2>LLM & Generative AI Integration</h2>
+                        <p>Implement and fine-tune Large Language Models (LLMs) like GPT and BERT for text generation, summarization, chatbots, and automation using OpenAI, Hugging Face, and LangChain.</p>
+                        <!--a href="#">Learn More</a-->
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-docker"></i>
+                        <h2>Model Deployment & MLOps</h2>
+                        <p>Deploy AI models in production using tools like Docker, FastAPI, and Streamlit. Set up CI/CD pipelines and monitor performance for scalable and reliable AI applications.</p>
+                        <!--a href="#">Learn More</a-->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Vector Databases & RAG Systems</h2>
+                        <p>Integrate vector databases like ChromaDB for semantic search and Retrieval-Augmented Generation (RAG) to power knowledge-driven AI systems.</p>
+                        <!--a href="#" target="_blank">Learn More</a-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------Portfolio------------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Featured Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/anime_recommender_system.png">
+                        <div class="layer">
+                            <h3>Anime Recommendation System + RAG Chatbot</h3>
+                            <p>
+                                The Anime Recommendation System suggests titles based on storyline similarities using cosine similarity. 
+                                It analyzes over 7,000 anime titles collected through web scraping and processed with natural language processing (NLP) for accurate recommendations.
+                                The project also includes a Retrieval-Augmented Generation (RAG) Anime Chatbot that provides contextual responses to user queries, utilizing LangChain, Groq, Hugging Face, and FastAPI.
+                            </p>
+                            <a href="https://huggingface.co/spaces/zenith04/anime_recommendation_system" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/stockprice_prediction_system.png">
+                        <div class="layer">
+                            <h3>Stock Price Prediction using LSTM</h3>
+                            <p>
+                                The Stock Price Predictor leverages machine learning models to forecast stock prices based on 
+                                historical data. The project involves collecting and preprocessing data, such as historical stock 
+                                prices, trading volumes, and market indicators, to identify trends and patterns. Using supervised 
+                                learning algorithms like Linear Regression, LSTM (Long Short-Term Memory), or Random Forest, the 
+                                model predicts future stock prices with reasonable accuracy.
+
+                                Key features include data visualization to analyze historical trends, feature engineering to 
+                                enhance predictive performance, and evaluation metrics like RMSE (Root Mean Squared Error) to assess 
+                                the model's effectiveness.
+                            </p>
+                            <a href="https://zenith40-stock-price-prediction.streamlit.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/No-code-ML.png">
+                        <div class="layer">
+                            <h3>Low-code/no-code AutoML tool</h3>
+                            <p>An end-to-end automated ML app for classification that simplifies the entire machine learning workflow. 
+                                It handles data preprocessing (missing value imputation, scaling, and splitting), 
+                                supports multiple classification models, performs evaluation with key metrics, and 
+                                enables users to download the trained model for deployment. Designed for efficiency, 
+                                it reduces manual effort and accelerates model development. 🚀</p>
+                            <a href="https://zenith40-automated-ml.streamlit.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/satkar400" target="_blank" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!------------------Contact------------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Let's Connect</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>satkarsarvankar400@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91-9307175826</p>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&#169; 2025 All Rights Reserved by Satkar, Made with <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz7czDLAx15BZPGitXYxTif6cw1J_0bIDaU1vxdkZzHyyWsPrPHAnhElf9ZOhPm_2n_sg/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+        <script>
+            const texts = ["Machine Learning Engineer","Deep Learning Specialist","NLP Expert","AI Researcher"];
+            const container = document.getElementById('typed-container');
+            let textIndex = 0;
+            let charIndex = 0;
+            let typingSpeed = 100;
+            let deletingSpeed = 50;
+            let pause = 1500;
+            let lines = [];
+
+            function type() {
+                if (!lines[textIndex]) {
+                    lines[textIndex] = document.createElement('span');
+                    container.appendChild(lines[textIndex]);
+                }
+                let currentLine = lines[textIndex];
+
+                if(charIndex < texts[textIndex].length){
+                    currentLine.textContent += texts[textIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, typingSpeed);
+                } else {
+                    setTimeout(deleteText, pause);
+                }
+            }
+
+            function deleteText() {
+                let currentLine = lines[textIndex];
+                if(charIndex > 0){
+                    currentLine.textContent = texts[textIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                    setTimeout(deleteText, deletingSpeed);
+                } else {
+                    textIndex = (textIndex + 1) % texts.length;
+                    setTimeout(type, 500);
+                }
+            }
+
+            // Start typing
+            type();
+        </script>
+    </body>
+</html>
